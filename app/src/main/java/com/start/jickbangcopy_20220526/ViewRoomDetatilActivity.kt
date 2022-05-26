@@ -16,6 +16,9 @@ class ViewRoomDetatilActivity : AppCompatActivity() {
 
         val roomData = intent.getSerializableExtra("room") as RoomData
 
-
+        binding.txtPrice.text = roomData.getFormattedPrice()
+        binding.txtDescription.text = roomData.description
+        binding.txtAddress.text = roomData.address
+        binding.txtFloor.text = roomData.getFormattedFloor()
     }
 }
