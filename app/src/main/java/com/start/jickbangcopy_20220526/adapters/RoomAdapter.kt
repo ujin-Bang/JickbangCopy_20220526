@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import com.start.jickbangcopy_20220526.R
 import com.start.jickbangcopy_20220526.datas.RoomData
 
 class RoomAdapter(
@@ -16,6 +17,14 @@ class RoomAdapter(
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
+        var tempRow = convertView
+        if (tempRow == null) {
+            tempRow = mInflater.inflate(R.layout.room_list_item, null)
+
+        }
+        val row = tempRow!!
+
+        return row
     }
 
 }
