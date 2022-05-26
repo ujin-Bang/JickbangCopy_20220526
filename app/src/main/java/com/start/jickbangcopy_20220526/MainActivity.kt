@@ -1,5 +1,6 @@
 package com.start.jickbangcopy_20220526
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -32,7 +33,9 @@ class MainActivity : AppCompatActivity() {
 
             val clickedRoom = mRooms[position]
 
-
+            val myIntent = Intent(this, ViewRoomDetatilActivity::class.java)
+            myIntent.putExtra("room",clickedRoom)
+            startActivity(myIntent)
         }
 
     }

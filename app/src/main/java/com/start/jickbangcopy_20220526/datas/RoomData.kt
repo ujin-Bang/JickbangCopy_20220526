@@ -1,6 +1,7 @@
 package com.start.jickbangcopy_20220526.datas
 
 import android.media.Image
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.*
 
@@ -8,7 +9,7 @@ class RoomData(
     val price: Int,
     val address: String,
     val floor: Int,
-    val description: String) {
+    val description: String): Serializable {
 
 //    가격에 따라 다른 형태로 가공해서 가격을 알려주는 함수
     fun getFormattedPrice():String{
