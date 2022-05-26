@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.start.jickbangcopy_20220526.databinding.ActivityViewRoomDetatilBinding
 import com.start.jickbangcopy_20220526.datas.RoomData
 
-class ViewRoomDetatilActivity : AppCompatActivity() {
+class ViewRoomDetailActivity : AppCompatActivity() {
 
     lateinit var binding:ActivityViewRoomDetatilBinding
 
