@@ -10,8 +10,10 @@ import com.start.jickbangcopy_20220526.datas.RoomData
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
+//    방데이터를 담아두기 위한 목록 변수
     val mRooms = ArrayList<RoomData>()
 
+//    RoomAdapter를 담기 위한 공감 => 채우는 건 onCreate에서 나중에
     lateinit var mRoomAdapter: RoomAdapter
 
 
