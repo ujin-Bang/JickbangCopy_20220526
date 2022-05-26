@@ -18,7 +18,12 @@ class RoomData(
             return priceStr
         }
         else {
-            val priceStr = NumberFormat.getNumberInstance(Locale.KOREA).format(this.price)
+            val uk = this.price / 10000 //정수 나누기 정수는 정수만 나온다. (소수점이하 자동 버림처림)
+            val rest = this.price % 10000
+            val restCommaStr = NumberFormat.getNumberInstance(Locale.KOREA).format(rest)
+
+            val priceStr = "${uk}억 ${restCommaStr}"
+
             return priceStr
         }
 
