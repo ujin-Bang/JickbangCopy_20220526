@@ -38,7 +38,7 @@
             android:id="@+id/txtDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="남향집 역세권 강추 짱 킹!!!"
+            android:text="남향집 역세권 강추 짱 킹!!!"/>
 
 
     </LinearLayout>
